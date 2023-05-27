@@ -43,4 +43,25 @@ this.length++
 return this
 }
  // Method to insert a new node at a specific position in the doubly linked list
+ insertAtPosition(data,position){
+    if(position === 0 || !this.head){
+        this.insertAtHead(data)
+        return
+    }
+    if(position === this.length){
+        this.insertAtTail(data)
+        return
+    }
+    const newNode = new Node(data)
+    let current = this.head
+    let count = 0
+    while(count<position){
+        current = current.next
+        count++
+    }
+    
+ 
+
+
+ }
 }

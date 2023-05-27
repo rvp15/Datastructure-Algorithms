@@ -74,6 +74,14 @@ class LinkedList {
     list += "Null";
     console.log(list);
   }
+  deleteNode(value){
+    if(!this.head) return
+    // Handle deletion if the node to be deleted is the head
+    if(this.head.value === value){
+      this.head = head.next
+    }
+
+  }
 }
 
 const linkedlist1 = new LinkedList();
